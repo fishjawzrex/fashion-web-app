@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>My App</title>
+    <script src="https://kit.fontawesome.com/298405996d.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style media="screen">
@@ -38,6 +39,9 @@
 .topnav {
   background-color: #000;
   overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  width:100%;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -113,6 +117,7 @@
   }
   #container_04 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     /*margin-top: -10px;*/
     font-family: 'Montserrat', sans-serif;
@@ -136,7 +141,7 @@
 
   }
   #container_04 input {
-    width: 300px;
+    width: 100%;
     height: 30px;
     margin: 10px;
 
@@ -146,11 +151,40 @@
     margin-left: 50px;
     margin-right: 50px;
 
+    margin-top: 10px;
+    width: 25%;
+
+
   }
-  #container_04 .links2 {
+  #container_04 .links a {
+    margin: 10px;
+    font-size: 12px;
+
+  }
+  #container_04 .links_2 {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    width: 20%;
+
+
+  }
+  #container_04 .links_0 {
+
+    width: 40%;
+
+
+  }
+  #container_04 .links_2 span{
+    margin: 10px;
+    font-size: 12px;
+
+  }
+  footer div {
+    font-family: 'Montserrat', sans-serif;
+    /*display: flex;*/
     text-align: center;
-
-
+    padding: 20px;
   }
   /*
   @media (min-width: 400px) {
@@ -176,8 +210,8 @@
     </script>
   </head>
   <body>
-    <header>
-      <div class="topnav" id="myTopnav" style="width: 100%">
+    <header style="background: #000;">
+      <div class="topnav" id="myTopnav" style="width: 100%; margin-right: 0px; padding-right: 0px;" >
         <a href="#home" class="active">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
@@ -221,7 +255,7 @@
         </form>
       </section>
       <section id="container_04">
-        <div class="">
+        <div class="links_0">
           <form class="" action="index.html" method="post">
             <h2>Contact</h2>
             <p>Questions? Go ahead.</p>
@@ -246,11 +280,24 @@
           <a href="#">Help</a>
         </div>
         <div class="links_2">
-          <h2>Store</h2>
-
+          <h2 style="margin-left: 10px;">Store</h2>
+          <span><i class="fas fa-map-marker-alt" ></i><a href="#">  Company Name</a></span>
+          <span><i class="fas fa-phone"></i><a href="#">  0044123123</a></span>
+          <span><i class="fas fa-envelope"></i><a href="#">  ex@mail.com</a></span>
+          <h2 style="margin-left: 10px;">We accept</h2>
+          <span><i class="fab fa-cc-amex"></i><a href="#">  Amex</a></span>
+          <span><i class="far fa-credit-card"></i><a href="#"> Credit Card</a></span>
+          <a href="#"></a>
         </div>
       </section>
     </main>
+      <footer>
+        <div class="" style="width: 100%; background: black; color: white;">
+          <p>Powered by <a href="#">fishandbada.net</a>
+          </p>
+
+      </div>
+     </footer>
 
   </body>
 </html>
