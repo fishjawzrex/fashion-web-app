@@ -36,7 +36,7 @@
       }
       /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #000;
   overflow: hidden;
 }
 
@@ -101,8 +101,67 @@
     display: flex;
     flex-direction: column;
     margin-top: -10px;
+    font-family: 'Montserrat', sans-serif;
 
   }
+  #container_03 form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  #container_04 {
+    display: flex;
+    flex-direction: row;
+    /*margin-top: -10px;*/
+    font-family: 'Montserrat', sans-serif;
+    justify-content: flex-start;
+
+  }
+  #container_04 div {
+    display: flex;
+    flex-direction: column;
+    /*margin-top: -10px;*/
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  #container_04 form {
+    display: flex;
+    flex-direction: column;
+    /*margin-top: -10px;*/
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    text-align: center;
+
+  }
+  #container_04 input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+
+  }
+  #container_04 .links {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
+  #container_04 .links2 {
+    text-align: center;
+
+
+  }
+  /*
+  @media (min-width: 400px) {
+    #container_02 {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      margin-top: 30px;
+    }
+  }*/
     </style>
     <script type="text/javascript">
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -149,6 +208,47 @@
           <p>V-Neck Merino Sweater</p> <p style="margin-top: -10px;"><strong>$69.99</strong></div></div>
         <div class="photos"><img src="https://cdn.pixabay.com/photo/2016/11/29/11/09/beautiful-1869116__340.jpg" alt="">
           <p>Vintage Sunglasses</p> <p style="margin-top: -10px;"><strong>$350</strong></div></div>
+      </section>
+      <section id="container_03">
+
+
+        <form class="" action="index.html" method="post" style="background: black; padding-left: 15px; padding-bottom: 40px;">
+          <h1 style="color: white; font-size: 40px;">Subscribe</h1>
+          <p style="color: white; margin-top: -15px;">To get special offers and VIP treatment:</p>
+          <input type="text" name="" value="" style="width: 96%; height: 40px; margin-bottom: 10px; padding-left: 10px; font-size: 20px; position: center;" placeholder="Enter e-mail">
+          <a href="#"><input type="button" name="" value="Subscribe" style="width: 150px;height: 40px; font-size: 20px; color: white; background: red; border: 0; box-shadow: 0;"></a>
+
+        </form>
+      </section>
+      <section id="container_04">
+        <div class="">
+          <form class="" action="index.html" method="post">
+            <h2>Contact</h2>
+            <p>Questions? Go ahead.</p>
+            <input type="text" name="" placeholder="Name" >
+            <input type="text" name="" placeholder="Email" >
+            <input type="text" name="" placeholder="Subject" >
+            <input type="text" name="" placeholder="Message" >
+            <a href="#"><input type="button" name="Send" value="Send" style=" border: none; box-shadow: none; color: white; background: black;"></a>
+          </form>
+
+        </div>
+        <div class="links">
+          <h2>About</h2>
+          <a href="#">About us</a>
+          <a href="#">We're hiring</a>
+          <a href="#">Support</a>
+          <a href="#">Find store</a>
+          <a href="#">Shipment</a>
+          <a href="#">Payment</a>
+          <a href="#">Gift card</a>
+          <a href="#">Return</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="links_2">
+          <h2>Store</h2>
+
+        </div>
       </section>
     </main>
 
