@@ -7,20 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style media="screen">
+
       #container_01 {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        /*width: 100%;*/
+
         background-image: url("https://cdn.pixabay.com/photo/2015/01/15/13/06/model-600238__340.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
 
         font-family: 'Montserrat', sans-serif;
         color: #FFF;
-        align-content: center;
+        /*align-content: center;*/
 
-        /*position: absolute;*/
+
       }
+
 
       #container_01 h1 {
         font-size: 60px;
@@ -47,9 +50,14 @@
   background-color: #000;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
-  width:100%;
+  /*width:100%;*/
+
+  position: fixed;
+  right: 8px;
+  left: 8px;
 
 }
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -203,6 +211,11 @@
       margin-top: 30px;
     }
   }*/
+  .fit{
+    position: absolute;
+    right: 8px;
+    left: 8px;
+  }
     </style>
     <script type="text/javascript">
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -218,7 +231,7 @@
   </head>
   <body>
     <header style="background: #000;">
-      <div class="topnav" id="myTopnav" style="width: 100%; margin-right: 0px; padding-right: 0px;" >
+      <div class="topnav" id="myTopnav" style=" margin-right: 0px; padding-right: 0px;" >
         <a href="#home" class="active">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
@@ -299,7 +312,7 @@
       </section>
     </main>
       <footer>
-        <div class="" style="width: 100%; background: black; color: white;">
+        <div class="fit" style=" background: black; color: white;">
           <p>Powered by <a href="#">fishandbada.net</a>
           </p>
 
