@@ -1,1 +1,7 @@
-error logs 
+error logs and bug fixes:
+
+I had to remove the width:100%; property of the topnav div in order to override
+the position:fixed; property so I could align the header with the main Content
+elements!
+
+Note that when you use position: fixed; you override the style parameters.
